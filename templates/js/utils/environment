@@ -1,0 +1,7 @@
+DB_HOST="dbHost"
+DB_NAME="dbName"
+DB_USER="dbUser"
+DB_PASS="dbPassword"
+DB_PORT="dbPort"
+SECRETSESS="secretKeyForSession"
+SECRETKEY="somSecretKey"

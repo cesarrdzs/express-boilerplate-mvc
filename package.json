@@ -1,0 +1,55 @@
+{
+	"name": "express-boilerplate-mvc",
+	"version": "1.0.1",
+	"description": "Express-Boilerplate MVC generator",
+	"author": "cesarrdzs",
+	"keywords": [
+		"express",
+		"generator",
+		"express",
+		"boilerplate"
+	],
+	"main": "bin/express-cli.js",
+	"preferGlobal": true,
+	"bin": {
+		"expressbo": "./bin/express-cli.js"
+	},
+	"scripts": {
+		"test": "mocha --reporter spec --bail --check-leaks test/",
+		"test-ci": "mocha --reporter spec --check-leaks test/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cesarrdzs/express-boilerplate.git"
+	},
+	"files": [
+		"LICENSE",
+		"bin/",
+		"templates/"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/cesarrdzs/express-boilerplate/issues"
+	},
+	"homepage": "https://github.com/cesarrdzs/express-boilerplate#readme",
+	"dependencies": {
+		"commander": "^2.18.0",
+		"ejs": "^2.6.1",
+		"mkdirp": "^0.5.1",
+		"sorted-object": "2.0.1"
+	},
+	"devDependencies": {
+		"eslint": "4.19.1",
+		"eslint-config-standard": "11.0.0",
+		"eslint-plugin-import": "2.9.0",
+		"eslint-plugin-node": "6.0.1",
+		"eslint-plugin-promise": "3.7.0",
+		"eslint-plugin-standard": "3.0.1",
+		"mocha": "2.5.3",
+		"rimraf": "2.5.4",
+		"supertest": "1.2.0",
+		"tmp": "0.0.33",
+		"tree-kill": "1.2.0",
+		"validate-npm-package-name": "3.0.0"
+	}
+}
