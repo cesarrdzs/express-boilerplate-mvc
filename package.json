@@ -20,7 +20,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/cesarrdzs/express-boilerplate.git"
+		"url": "git+https://github.com/cesarrdzs/express-boilerplate-mvc.git"
 	},
 	"files": [
 		"LICENSE",
@@ -29,9 +29,9 @@
 	],
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/cesarrdzs/express-boilerplate/issues"
+		"url": "https://github.com/cesarrdzs/express-boilerplate-mvc/issues"
 	},
-	"homepage": "https://github.com/cesarrdzs/express-boilerplate#readme",
+	"homepage": "https://github.com/cesarrdzs/express-boilerplate-mvc#readme",
 	"dependencies": {
 		"commander": "^2.18.0",
 		"ejs": "^2.6.1",

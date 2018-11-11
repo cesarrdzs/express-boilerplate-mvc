@@ -182,7 +182,6 @@ function createApplication (name, path) {
 		})
 
 		mkdir(path + '/common', function () {
-			copyTemplate('js/routes/routes.js', path + '/common/routes.js')
 			copyTemplate('js/utils/KnexDB.js', path + '/common/KnexDB.js')
 			copyTemplate('js/utils/Utils.js', path + '/common/Utils.js')
 			copyTemplate('js/utils/environment', path + '/.env')
@@ -191,7 +190,7 @@ function createApplication (name, path) {
 
 		mkdir(path + '/app', function(){
 			mkdir(path + '/app/controllers', function(){
-				copyTemplate('js/utils/Home.js', path + '/app/controllers/Home.js')
+				copyTemplate('js/utils/Home.js', path + '/app/controllers/HomeController.js')
 				complete()
 			})
 
@@ -230,7 +229,6 @@ function createApplication (name, path) {
 					}
 					complete()
 				});
-
 
 				mkdir(path + '/app/views/layouts', function() {
 					switch (program.view) {
@@ -332,6 +330,7 @@ function createApplication (name, path) {
 				'serve-favicon': '~2.4.5',
 				"nodemon": "^1.14.12",
 				"pg": "^7.4.3",
+				"express-mvc-router": "^1.0.0",
 				"connect-flash": "^0.1.1",
 			}
 		}
