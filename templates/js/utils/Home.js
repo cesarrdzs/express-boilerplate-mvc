@@ -1,15 +1,11 @@
 const User = require('../models/User');
 
-module.exports = class HomeController {
+module.exports = class DefaultController {
 	constructor(){}
 
 	async index(){
-		this.res.render('home/index', {
-			title: 'Express Boilerplate Home',
-			error: req.flash("error"),
-			success: req.flash("success"),
-			session: req.session,
-			allUsers: allUsers
+		this.render({
+			title: 'Express Boilerplate Default',
 		});
 	}
 
