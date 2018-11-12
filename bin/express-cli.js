@@ -200,31 +200,31 @@ function createApplication (name, path) {
 			})
 
 			mkdir(path + '/app/views', function () {
-				mkdir(path + '/app/views/home', function(){
+				mkdir(path + '/app/views/default', function(){
 					switch (program.view) {
 						case 'dust':
-							copyTemplate('dust/index.dust', path + '/app/views/home/index.dust')
+							copyTemplate('dust/index.dust', path + '/app/views/default/index.dust')
 							break
 						case 'ejs':
-							copyTemplate('ejs/index.ejs', path + '/app/views/home/index.ejs')
+							copyTemplate('ejs/index.ejs', path + '/app/views/default/index.ejs')
 							break
 						case 'jade':
-							copyTemplate('jade/index.jade', path + '/app/views/home/index.jade')
+							copyTemplate('jade/index.jade', path + '/app/views/default/index.jade')
 							break
 						case 'hjs':
-							copyTemplate('hogan/index.hjs', path + '/app/views/home/index.hjs')
+							copyTemplate('hogan/index.hjs', path + '/app/views/default/index.hjs')
 							break
 						case 'hbs':
-							copyTemplate('hbs/index.hbs', path + '/app/views/home/index.hbs')
+							copyTemplate('hbs/index.hbs', path + '/app/views/default/index.hbs')
 							break
 						case 'pug':
-							copyTemplate('pug/index.pug', path + '/app/views/home/index.pug')
+							copyTemplate('pug/index.pug', path + '/app/views/default/index.pug')
 							break
 						case 'twig':
-							copyTemplate('twig/index.twig', path + '/app/views/home/index.twig')
+							copyTemplate('twig/index.twig', path + '/app/views/default/index.twig')
 							break
 						case 'vash':
-							copyTemplate('vash/index.vash', path + '/app/views/home/index.vash')
+							copyTemplate('vash/index.vash', path + '/app/views/default/index.vash')
 							break
 					}
 					complete()
